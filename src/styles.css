@@ -1,0 +1,35 @@
+.select-role {
+  position: relative;
+}
+
+.select-role .ant-select-item-option-content::after {
+  position: absolute;
+  content: "";
+  background-image: url("notchecked.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  right: 0;
+
+  width: 15px;
+  height: 15px;
+  line-height: 100%;
+}
+
+.select-role .ant-select-item-option-state * {
+  display: none;
+}
+
+.select-role .ant-select-item-option-state {
+  position: absolute;
+  content: "";
+  background-image: url(checked.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  right: 0;
+
+  width: 15px;
+  height: 15px;
+  line-height: 100%;
+}
